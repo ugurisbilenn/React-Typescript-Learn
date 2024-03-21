@@ -1,5 +1,6 @@
 
 import './App.css';
+import EventActions from './components/EventActions';
 import Home from './components/Home';
 import Instructor from './components/Instructor';
 import InstructorList from './components/InstructorList';
@@ -34,6 +35,7 @@ function App() {
       <InstructorList instNameLastNameList={instructorList}/>
 
       <Request status="success"/>
+      <EventActions />
     </div>
   );
 }
