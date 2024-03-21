@@ -1,10 +1,7 @@
 import React from 'react'
 
-type DataComing = {
-    name:string;
-    courseNumber:number;
-    isBest:boolean;
-}
+import {DataComing} from './PropsTypes';
+
 function Home(props:DataComing) {
   return (
     <div>
