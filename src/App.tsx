@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Instructor from './components/Instructor';
 import InstructorList from './components/InstructorList';
 import LoginCheck from './components/LoginCheck';
+import ReducerExemple from './components/ReducerExemple';
 import Request from './components/Request';
 
 function App() {
@@ -39,7 +40,7 @@ function App() {
       <EventActions /> */}
 
       <LoginCheck/>
-      
+      <ReducerExemple/>
     </div>
   );
 }
