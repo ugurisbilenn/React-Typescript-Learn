@@ -1,5 +1,6 @@
 
 import './App.css';
+import ContextExemple from './components/ContextExemple';
 import EventActions from './components/EventActions';
 import Home from './components/Home';
 import Instructor from './components/Instructor';
@@ -7,6 +8,7 @@ import InstructorList from './components/InstructorList';
 import LoginCheck from './components/LoginCheck';
 import ReducerExemple from './components/ReducerExemple';
 import Request from './components/Request';
+import { ThemeContextProvider } from './components/ThemeContext';
 
 function App() {
 
@@ -41,6 +43,10 @@ function App() {
 
       <LoginCheck/>
       <ReducerExemple/>
+      <ThemeContextProvider>
+      <ContextExemple/>
+      </ThemeContextProvider>
+     
     </div>
   );
 }
