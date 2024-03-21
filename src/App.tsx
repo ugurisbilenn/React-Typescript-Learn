@@ -1,24 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import Home from './components/Home';
+import Instructor from './components/Instructor';
+import InstructorList from './components/InstructorList';
 
 function App() {
+
+  const instructor = {
+    firstName:"Uğur",
+    lastName: "İşbilen",
+  };
+  const instructorList = [{
+    firstName:"Uğur",
+    lastName: "İşbilen",
+  },
+  {
+    firstName:"Aslı",
+    lastName: "Ara",
+  },
+  {
+    firstName:"Gse",
+    lastName: "İşbiAFAlen",
+  }
+];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Home name="Uğur İşbilen" courseNumber={28} isBest={true}/>
+
+      <Instructor instNameLastName={instructor}/>
+
+      <InstructorList instNameLastNameList={instructorList}/>
     </div>
   );
 }
