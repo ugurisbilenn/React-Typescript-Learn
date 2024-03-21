@@ -7,6 +7,7 @@ import Instructor from './components/Instructor';
 import InstructorList from './components/InstructorList';
 import LoginCheck from './components/LoginCheck';
 import ReducerExemple from './components/ReducerExemple';
+import RefExemple from './components/RefExemple';
 import Request from './components/Request';
 import { ThemeContextProvider } from './components/ThemeContext';
 
@@ -41,11 +42,12 @@ function App() {
       <Request status="success"/>
       <EventActions /> */}
 
-      <LoginCheck/>
+      {/* <LoginCheck/>
       <ReducerExemple/>
       <ThemeContextProvider>
       <ContextExemple/>
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
+      <RefExemple/>
      
     </div>
   );
